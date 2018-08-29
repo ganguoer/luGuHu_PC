@@ -1,4 +1,4 @@
-.navbanner{position: fixed;width:100%;height: 123px;background: rgba(255,255,255,.7);left: 0; top: 0;z-index: 2;}
+.navbanner{position: absolute;width:100%;height: 123px;background: rgba(255,255,255,.7);left: 0; top: 0;z-index: 2;}
 .banner_ds{background: url(../images/indexs_01.png) no-repeat;width: 100%;position: relative;}
 .navbanner .logo{width: 83px;height: 79px;margin-top: 25px; margin-left: 170px;}
 .navbanner .banner_cont{width: 1220px; margin: 0 auto}
@@ -28,5 +28,32 @@
 .tocket_content{width: 1220px; margin: 0 auto;}
 .top_title{background: url(../images/index_11.png) no-repeat;width: 159px; height: 55px; line-height: 55px; text-align: center;color: #fff; font-size: 20px; margin: 0 auto;}
 .tocket_content .more{ float: right;background: url(../images/index_15.png) no-repeat;width: 66px; height: 26px; line-height: 26px; text-align: center; color: #fff;background-size: 100%;display: inline-block;}
-.tocket_content .first_img{width: 1210px;position: relative;height: 315px;box-shadow: 10px 10px 5px #d4d4d4; border-radius: 6px;overflow: hidden;}
+.tocket_content .first_img{width: 1210px;position: relative;height: 315px;box-shadow: 5px 6px 8px #d4d4d4; }
 .tocket_content .mores{width: 100%;height: 26px;margin-bottom: 20px}
+.tocket_content .first_img img{width: 1210px;height: 315px;border-radius: 6px;overflow: hidden;}
+.tocket_content .tuijian{background: url(../images/tj.png) no-repeat; width: 135px; height: 105px;position: absolute;z-index: 2;left: -22px; top: -17px}
+.tocket_content .layers,.tocket_content .layerss{position: absolute; left: 0; top: 0; background: rgba(0,0,0,.5);width: 233px; height: 315px;border-radius: 6px}
+.tocket_content .layerss{width: 100%; height: 100%;}
+.tocket_content .tit_img{font-size: 22px;color: #fff; text-align: center; padding: 110px 15px 0;}
+.tocket_content .tits_txt{color: #fff; text-align: center; margin-top: 10px}
+.tocket_content .newprice{color:#ffd200}
+.tocket_content .oldprice{text-decoration:line-through}
+.tocket_content .style2{font-size: 30px}
+.tocket_content .style3{font-size: 16px}
+.tocket_content .style1{font-size: 20px}
+.tocket_content .style4{font-size: 16px}
+.tocket_content .style5{font-size: 22px}
+.tocket_content .style6{font-size: 12px}
+.tocket_content .second_img{width: 1220px;margin-top: 10px;}
+.tocket_content .every_img{width: 600px; margin-right: 10px;position: relative;box-shadow: 5px 6px 8px #d4d4d4; height: 232px;}
+.mt65{margin-top: 65px;}
+.tocket_content .w396{width: 396px; height: 522px;box-shadow: 5px 6px 8px #d4d4d4; position: relative;}
+.tocket_content .w396 img{width: 396px; height: 522px;border-radius: 6px; overflow: hidden;}
+.tocket_content .pdt75{padding-top: 75px;}
+.tocket_content .pdt185{padding-top: 185px;}
+.tocket_content .w398{width: 398px;margin:0 10px;height: 522px}
+.tocket_content .top_398{width: 398px;height: 256px;position: relative;}
+.tocket_content .top_398:first-child{margin-bottom: 10px;}
+.tocket_content .w600{width: 600px;height: 474px;position: relative;margin-right:10px;box-shadow: 5px 6px 8px #d4d4d4;}
+.tocket_content .top_600{width: 600px; height: 232px;position: relative;box-shadow: 5px 6px 8px #d4d4d4;}
+.tocket_content .top_600:first-child{margin-bottom: 10px}
