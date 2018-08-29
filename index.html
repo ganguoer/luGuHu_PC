@@ -75,7 +75,7 @@
         <div class="mores">
             <a class="more" href="#">更多》</a>
         </div>
-        <div class="first_img">
+        <div class="first_img every_jq">
             <img src="images/indexs_04.png">
             <span class="tuijian"></span>
             <div class="layers">
@@ -95,9 +95,9 @@
             </div>
         </div>
         <div class="second_img clearfix">
-            <div class="lf every_img">
+            <div class="lf every_img every_jq">
                 <img src="images/indexs_07.png" alt="">
-                <div class="layerss">
+                <div class="layers">
                     <p class="tit_img pdt75">【格姆女神山】</p>
                     <p class="tits_txt">
                         <span class="newprice">
@@ -113,9 +113,9 @@
                     </p>
                 </div>
             </div>
-            <div class="lf every_img">
+            <div class="lf every_img every_jq">
                 <img src="images/indexs_09.png" alt="">
-                <div class="layerss">
+                <div class="layers">
                     <p class="tit_img pdt75">【大落水村】</p>
                     <p class="tits_txt">
                         <span class="newprice">
@@ -139,10 +139,10 @@
             <a class="more" href="#">更多》</a>
         </div>
         <div class="second_img clearfix">
-            <div class="lf w396">
+            <div class="lf w396 every_jq">
                 <img src="images/indexs_15.png" alt="">
                 <span class="tuijian"></span>
-                <div class="layerss">
+                <div class="layers">
                     <p class="tit_img pdt185">【泸沽湖一念花舍客栈】</p>
                     <p class="tits_txt">
                         <span class="newprice">
@@ -159,9 +159,9 @@
                 </div>
             </div>
             <div class="lf w398">
-                <div class="top_398">
+                <div class="top_398 every_jq">
                     <img src="images/indexs_17.png">
-                    <div class="layerss">
+                    <div class="layers">
                         <p class="tit_img pdt75">【泸沽湖听海月假日酒店】</p>
                         <p class="tits_txt">
                             <span class="newprice">
@@ -177,9 +177,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="top_398">
+                <div class="top_398 every_jq">
                     <img src="images/indexs_20.png">
-                    <div class="layerss">
+                    <div class="layers">
                         <p class="tit_img pdt75">【泸沽湖缦山·半山阳光客栈】</p>
                         <p class="tits_txt">
                             <span class="newprice">
@@ -196,9 +196,9 @@
                     </div>
                 </div>
             </div>
-            <div class="lf w396">
+            <div class="lf w396 every_jq">
                 <img src="images/indexs_15.png" alt="">
-                <div class="layerss">
+                <div class="layers">
                     <p class="tit_img pdt185">【泸沽湖一念花舍客栈】</p>
                     <p class="tits_txt">
                         <span class="newprice">
@@ -222,10 +222,10 @@
                 <a class="more" href="#">更多》</a>
             </div>
             <div class="second_img clearfix">
-                <div class="lf w600">
+                <div class="lf w600 every_jq">
                     <img src="images/indexs_24.png" alt="">
                     <span class="tuijian"></span>
-                    <div class="layerss">
+                    <div class="layers">
                         <p class="tit_img pdt185">【泸沽湖一念花舍客栈】</p>
                         <p class="tits_txt">
                             <span class="newprice">
@@ -242,9 +242,9 @@
                     </div>
                 </div>
                 <div class="lf w600">
-                    <div class="top_600">
+                    <div class="top_600 every_jq">
                         <img src="images/indexs_26.png">
-                        <div class="layerss">
+                        <div class="layers">
                             <p class="tit_img pdt75">【泸沽湖听海月假日酒店】</p>
                             <p class="tits_txt">
                                 <span class="newprice">
@@ -260,9 +260,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="top_600">
+                    <div class="top_600 every_jq">
                         <img src="images/indexs_28.png">
-                        <div class="layerss">
+                        <div class="layers">
                             <p class="tit_img pdt75">【泸沽湖缦山·半山阳光客栈】</p>
                             <p class="tits_txt">
                                 <span class="newprice">
@@ -285,7 +285,14 @@
     <script>
         $(function () {
             var h = $(window).height();
-            $('.banner_ds').css({ "height": h })
+            $('.banner_ds').css({ "height": h });
+            $('.every_jq').hover(function(){
+                $(this).find('.layers').addClass('layeranimate');
+                $(this).find('.layers').css({"left":0})
+            },function(){
+                $(this).find('.layers').removeClass('layeranimate');
+                $(this).find('.layers').css({"left":'-100%'})
+            })
         })
     </script>
 </body>
