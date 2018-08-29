@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?kdmj20');
+  src:  url('fonts/icomoon.eot?kdmj20#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kdmj20') format('truetype'),
+    url('fonts/icomoon.woff?kdmj20') format('woff'),
+    url('fonts/icomoon.svg?kdmj20#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-adress:before {
+  content: "\e900";
+  color: #1182e3;
+}
+.icon-air:before {
+  content: "\e901";
+  color: #1182e3;
+}
+.icon-arrow:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-building:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-car:before {
+  content: "\e904";
+  color: #1182e3;
+}
+.icon-dian:before {
+  content: "\e905";
+  color: #1182e3;
+}
+.icon-dui:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-fox:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-heart:before {
+  content: "\e908";
+  color: #fb8221;
+}
+.icon-map:before {
+  content: "\e90a";
+  color: #1182e3;
+}
+.icon-package:before {
+  content: "\e90b";
+  color: #1182e3;
+}
+.icon-qq:before {
+  content: "\e90c";
+  color: #1182e3;
+}
+.icon-sanjiao:before {
+  content: "\e90d";
+  color: #1182e3;
+}
+.icon-tel:before {
+  content: "\e90e";
+  color: #1182e3;
+}
+.icon-ticket_b:before {
+  content: "\e90f";
+  color: #fb8221;
+}
+.icon-ting:before {
+  content: "\e910";
+  color: #fff;
+}
+.icon-wan:before {
+  content: "\e911";
+  color: #1182e3;
+}
+.icon-weib:before {
+  content: "\e912";
+  color: #1182e3;
+}
+.icon-wifi:before {
+  content: "\e913";
+  color: #1182e3;
+}
+.icon-wx:before {
+  content: "\e914";
+  color: #1182e3;
+}
+.icon-xiasanjiao:before {
+  content: "\e915";
+  color: #535353;
+}

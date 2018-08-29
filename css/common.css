@@ -125,3 +125,19 @@ select {
   /*padding-right: 14px;*/
 }
 
+.navbanner{position: absolute;width:100%;height: 123px;background: rgba(255,255,255,.7);left: 0; top: 0;z-index: 2;}
+.banner_ds{background: url(../images/indexs_01.png) no-repeat;width: 100%;position: relative;}
+.navbanner .logo{width: 83px;height: 79px;margin-top: 25px; margin-left: 170px;}
+.navbanner .banner_cont{width: 1220px; margin: 0 auto}
+.navbanner .navselect{height: 68px; line-height: 68px;margin:25px 0 0 20px;}
+.navbanner .navselect li{float: left; font-size: 16px; margin-left: 45px; padding: 0 5px}
+.navbanner .navselect li.active{ border-bottom: solid 3px #5750ff;}
+.navbanner .navselect li.active a{color:#5750ff}
+.navbanner .nav_rf{height: 36px; margin-top: 44px;margin-right: 170px}
+.iconcom{background: url(../images/icon1.png) no-repeat;}
+.navbanner .qq{background-position: 0 0; }
+.navbanner .nav_rf span{width: 36px; height: 36px;margin-right: 15px}
+.navbanner .weichat{background-position: -1px -101px; }
+.navbanner .sina{background-position: -1px -200px; }
+.navbanner .nav_rf a{height: 36px; line-height: 36px; font-size: 16px;font-weight: 600}
+.navbanner .login{color: #5750ff;margin-right: 10px}
