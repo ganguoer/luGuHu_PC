@@ -39,7 +39,7 @@
 .tocket_content .pdt75{padding-top: 75px;}
 .tocket_content .pdt185{padding-top: 185px;}
 .tocket_content .w398{width: 398px;margin:0 10px;height: 522px}
-.tocket_content .top_398{width: 398px;height: 256px;position: relative;}
+.tocket_content .top_398{width: 398px;height: 256px;position: relative;box-shadow: 5px 6px 8px #d4d4d4;}
 .tocket_content .top_398:first-child{margin-bottom: 10px;}
 .tocket_content .w600{width: 600px;height: 474px;position: relative;margin-right:10px;box-shadow: 5px 6px 8px #d4d4d4;}
 .tocket_content .top_600{width: 600px; height: 232px;position: relative;box-shadow: 5px 6px 8px #d4d4d4;}
