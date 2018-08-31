@@ -1,12 +1,14 @@
 
-.banner{
+/*----------------------景区详情------------------------*/
+.s_banner{
     background: url('../images/scenic_banner.png');
     repeat: no-repeat;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    height: 752px;
+    height: 875px;
 }
+
 .content{
     width: 1220px;
     margin: 0 auto;
@@ -16,7 +18,6 @@
 
 }
 .s_title{
-    width: 144px;
     border-bottom: 2px solid #1182e3;
     float: left;
     height: 54px;
@@ -55,6 +56,7 @@
     margin-left: 42px;
 }
 .s_sr h5{
+    font-size: 20px;
     color: #1182e3;
     margin: 0;
     padding: 0;
@@ -94,10 +96,13 @@ p>img{
     vertical-align: middle;
     margin-right: 8px;
 }
+
+
+/*文章详情*/
+
 .s_content{
     background-color: #f8f8f8;
     border: 1px solid #f0f0f0;
-    height: 1000px;
     margin-bottom: 136px;
 }
 .s_tabnav{
@@ -209,6 +214,7 @@ p>img{
     height: 9px;
     border-top: 1px solid #d1d1d1;
     background-color: #eeeeee;
+    margin-top: 20px;
 }
 
 .s_artile .s_pd{
@@ -227,6 +233,342 @@ p>img{
     font-size: 14px;
     line-height: 24px;
 }
+
+.s_introduce{
+    padding: 30px 76px;
+}
+.in_tit{
+    color: #ce0000;
+    font-size: 14px;
+    text-indent:4em;
+}
+.in_detail{
+    padding: 40px 0;
+    text-indent: 2em;
+    font-size: 14px;
+    color: #222222;
+    line-height: 30px;
+}
+.s_introduce img{
+    display:block;
+    margin: 0 auto;
+    width: 67%;
+}
+.wenxin .wen_tit{
+    font-size: 16px;
+    color: #222;
+    padding-top: 50px;
+}
+.wenxin p{
+    text-indent: 2em;
+    line-height: 30px;
+}
+.jiaotong{
+    text-indent: 6em;
+    padding: 30px;
+}
+.s_satif{
+    width: 903px;
+    margin: 0 auto;
+    padding: 32px 40px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.s_satif dl{
+    float: left;
+    padding-left: 88px;
+}
+.s_satif dl:first-child{
+    text-align: center;
+    border-right: 1px solid #e9e9e9;
+    padding-right:30px;
+    padding-left: 0px;
+}
+.s_satif dl dd{
+    font-size: 14px;
+    color: #888888;
+    line-height: 30px;
+}
+.s_satif dl dd strong{
+    font-size: 36px;
+    color: #fb8221;
+}
+.s_satif dl dd span{
+    font-size: 14px;
+    color: #fb8221;
+    padding-left: 10px;
+}
+.progress {
+    overflow: hidden;
+    height: 12px;
+    margin-left: 10px;
+    background-color: #f7f7f7;
+    background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    width:100px;
+    display: inline-block;
+}
+
+.progress .bar {
+    width: 0%;
+    height: 100%;
+    color: #ffffff;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fb8221;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: width 0.6s ease;
+    -moz-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+.chuyou{
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+    padding: 16px 0;
+}
+.ping{
+    width: 86px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background: #fb8221;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.s_artile #zixun{
+    border: 1px solid #e9e9e9;
+    background-color: #f8f8f8;
+    margin: 32px 82px 20px;
+    width: 1020px;
+    height: 120px;
+    color: #888888;
+    font-size: 14px;
+    text-indent: 2em;
+}
+textarea::placeholder{
+    color: #888888;
+}
+
+.nicheng{
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 26px;
+    margin-left: 510px;
+}
+
+.nicheng input{
+    border: 1px solid #e9e9e9;
+    background-color: #f8f8f8;
+    width: 86px;
+    height: 28px;
+}
+.nicheng .deng{
+    width: 59px;
+    height: 28px;
+    line-height: 28px;
+    background: #fb8221;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 3px;
+}
+.nicheng .tijiao{
+    width: 77px;
+    height: 28px;
+    line-height: 28px;
+    background: #f75d1d;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 3px;
+}
+.nicheng .yanzh{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+/*----------------- 酒店详情 ------------------*/
+.h_banner{
+    background: url('../images/h_banner.jpg');
+    repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    height: 875px;
+    width: 100%;
+}
+.s_sr .h_shu{
+    color: #989898;
+    margin-bottom: 0;
+}
+
+.s_sr .h_map{
+    color: #5069ff;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.s_sr .h_hotel span{
+    color: #fff;
+    background: #ffd200;
+    padding: 1px 4px;
+}
+.s_sr .h_icon img{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+.s_artile .h_hd{
+    padding: 33px 65px;
+}
+.s_artile .h_hd p{
+    line-height: 30px;
+    text-indent: 2em;
+}
+.h_date{
+    width: 100%;
+}
+.h_date .h_hp{
+    width: 100%;
+}
+.h_date .h_hp tr{
+    border: 1px solid #e2e2e2;
+    width: 1190px;
+    padding: 0 20px;
+}
+.h_date .h_hp tr th{
+    text-align: left;
+    padding: 10px  20px;
+    background-color: #fff5e6;
+}
+.h_date .h_hp tr td{
+    padding: 16px 0 16px 16px ;
+    margin: 0 20px;
+    border-right: 1px solid #e2e2e2;
+    vertical-align: text-top;
+}
+.h_date .h_hp .td_img img{
+    width: 101px;
+    border-radius: 2px;
+    float: left;
+    padding: 0 8px 0 0px;
+}
+.h_date .h_hp tr td span{
+    color: #222222;
+    line-height: 24px;
+}
+.h_date .h_hp tr td s{
+    text-decoration: none;
+    color: #ffd200;
+    display: block;
+}
+.h_date .h_hp .td_img span.icon-xiasanjiao{
+    font-size: 12px;
+    padding-left: 6px;
+}
+.h_date .h_hp tr td p{
+    color: #1182e3;
+}
+.h_date .h_hp .h_tdprice i{
+    color: #f23f00;
+    font-size: 12px;
+}
+.h_date .h_hp .h_tdprice strong{
+    color: #f23f00;
+    font-size: 18px;
+}
+.h_date .h_hp .h_tdprice div{
+    display: inline-block;
+}
+.h_date .h_hp .h_tdprice div.h_btn {
+    width: 66px;
+    float: right;
+    text-align: center;
+    padding-right: 36px;
+}
+.h_date .h_hp .h_tdprice div.h_btn .yuding{
+   display: block;
+    width: 66px;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    background-color: #fb8221;
+    border-radius: 3px 3px 0 0;
+}
+.h_date .h_hp .h_tdprice div.h_btn .zaixian{
+   display: block;
+    width: 64px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 10px;
+    color: #1182e3;
+    background-color: #ebf4fd;
+    border-radius:0 0 3px 3px;
+    border: 1px solid #e2e2e2;
+    border-top:0;
+}
+
+
+.s_artile table{
+    width: 97%;
+    margin: 26px auto 10px;
+}
+.s_artile table tr{
+    margin: 10px 0 10px 20px;
+    border-bottom: 1px dotted #ebebeb;
+    height: 39px;
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+}
+.s_artile table th{
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+   font-weight: 400;
+    padding-left: 20px;
+}
+.s_artile table td{
+    padding-left: 20px;
+}
+.s_artile table td span{
+    padding-right: 10px;
+    font-size: 14px;
+}
+.s_artile table td span.icon-dui{
+    color: #1182e3;
+}
+
+
+
 
 
 
