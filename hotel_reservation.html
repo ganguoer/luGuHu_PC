@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泸沽湖官网</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="navbanner pr">
+        <div class="banner_cont clearfix">
+            <div class="lf logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="lf">
+                <ul class="clearfix navselect">
+                    <li class="active">
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">景点门票</a>
+                    </li>
+                    <li>
+                        <a href="#">酒店预订</a>
+                    </li>
+                    <li>
+                        <a href="#">旅游线路</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rf nav_rf">
+                <div class="clearfix">
+                    <span class="lf iconcom qq"></span>
+                    <span class="lf iconcom weichat"></span>
+                    <span class="lf iconcom sina"></span>
+                    <a href="#" class="login">登录</a>
+                    <a href="#">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content_warp">
+        <div class="inner_warp">
+            <div class="clearfix tit_cont">
+                <div class="lf titles_tip">
+                    <div class="clearfix">
+                        <span class="single lf"></span>
+                        <span class="lf">酒店预订</span>
+                    </div>
+                </div>
+                <div class="rf local_current">当前位置>首页>
+                    <span>酒店预订</span>
+                </div>
+            </div>
+            <div class="search_1 clearfix">
+                <div class="lf address">
+                    目的地：
+                    <input type="text" value="丽江">
+                </div>
+                <div class="lf address">
+                    入住：
+                    <input type="text" value="2018-08-09">
+                </div>
+                <div class="lf address">
+                    退房：
+                    <input type="text" value="2018-08-09">
+                </div>
+                <div class="lf homenum">
+                    <div class="clearfix">
+                        <span class="lf">房间数:</span>
+                        <div class="lf homesel">
+                            <p>1间</p>
+                            <span class="xuanze"></span>
+                            <ul>
+                                <li>1间</li>
+                                <li>2间</li>
+                                <li>3间</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="lf homenum">
+                    <div class="clearfix">
+                        <span class="lf">住客数:</span>
+                        <div class="lf homesel">
+                            <p>1成人</p>
+                            <span class="xuanze"></span>
+                            <ul>
+                                <li>1成人</li>
+                                <li>2成人</li>
+                                <li>3成人</li>
+                            </ul>
+                        </div>
+                        <span class="lf wenh">?</span>
+                    </div>
+                </div>
+                <div class="lf address guanjian">
+                    关键词：
+                    <input type="text" value="酒店名/地标/商圈">
+                </div>
+                <div class="lf btn_search">搜索</div>
+            </div>
+            <div class="search_wrap">
+                <div class="hot_sel clearfix">
+                    <span class="tit lf">热门精选</span>
+                    <div class="lf homenum">
+                        <div class="homesel quans">
+                            <p>可用优惠券</p>
+                            <span class="xuanze"></span>
+                            <ul>
+                                <li>可用优惠券</li>
+                                <li>不可用优惠券</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="lf hotspan">含早餐</span>
+                    <span class="lf hotspan">4.5分以上</span>
+                    <span class="lf hotspan">双床</span>
+                    <span class="lf hotspan">可免费取消</span>
+                    <span class="lf hotspan">立即确认</span>
+                    <span class="lf hotspan">钟点房</span>
+                </div>
+                <dl class="filterItem filterItemStar" data-type="price|star">
+                    <dt class="filterItem-hd">星级价格</dt>
+                    <dd class="filterItem-bd clearfix">
+                        <span href="javascript:;" class="btn-unlimited cur">不限</span>
+                        <div class="optionList clearfix">
+                            <div id="star-2" class=" optionList-item" title="二星级及以下/经济">二星级及以下/经济</div>
+                            <div class=" optionList-item">三星级/舒适</div>
+                            <div id="star-4" class=" optionList-item">四星级/高档</div>
+                            <div id="star-5" class=" optionList-item">五星级/豪华</div>
+                        </div>
+                        <div class="optionList optionFixList clearfix">
+                            <div id="price-v0v149" class=" optionList-item">150以下</div>
+                            <div id="price-v150v300" class=" optionList-item">150-300</div>
+                            <div id="price-v300v450" class=" optionList-item">300-450</div>
+                            <div id="price-v450v600" class=" optionList-item">450-600</div>
+                            <div id="price-v601" class=" optionList-item">600以上</div>
+                            <div id="priceRange" class="customPrice">
+                                <input class="customPrice-input" type="text" value="" data-defaultvalue="" placeholder="¥">
+                                <div class="customPrice-line">-</div>
+                                <input class="customPrice-input" type="text" value="" data-defaultvalue="" placeholder="¥">
+                                <button type="button" id="btn_range" class="customPrice-btn">搜索</button>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="filterItem filterItemSenior" >
+                    <dt class="filterItem-hd">高级筛选</dt>
+                    <dd class="filterItem-bd clearfix">
+                        <span href="javascript:;" class="btn-unlimited cur">不限</span>
+                        <ul class="selectList clearfix selectListCur">
+                            <li data-tab="promotionf" class="cur">优惠
+                                <span class="num hidden">0</span>
+                                <i class="icon_up icon_down"></i>
+                            </li>
+                            <li data-tab="feature">特色
+                                <span class="num hidden">0</span>
+                                <i class="icon_up"></i>
+                            </li>
+                            <li data-tab="brand">品牌
+                                <span class="num hidden">0</span>
+                                <i class="icon_up"></i>
+                            </li>
+                            <li data-tab="equip">设施服务
+                                <span class="num hidden">0</span>
+                                <i class="icon_up"></i>
+                            </li>
+                            <li data-tab="bed">床型
+                                <span class="num hidden">0</span>
+                                <i class="icon_up"></i>
+                            </li>
+                            <li data-tab="breakfast">早餐
+                                <span class="num hidden">0</span>
+                                <i class="icon_up"></i>
+                            </li>
+                            <li data-tab="score">点评评分
+                                <span class="num hidden">0</span>
+                                <i class="icon_up"></i>
+                            </li>
+                            <li data-tab="CommentCount">点评数量
+                                <span class="num hidden">0</span>
+                                <i class="icon_up"></i>
+                            </li>
+                            <li data-tab="PaymentType">支付方式
+                                <span class="num hidden">0</span>
+                                <i class="icon_up"></i>
+                            </li>
+                            <li data-tab="CtripService">携程服务
+                                <span class="num hidden">0</span>
+                                <i class="icon_up"></i>
+                            </li>
+                        </ul>
+                        <div id="J_PromotionFilterList" class="SeniorWrap">
+                            <span data-dopost="T" data-type="feature" class="btn-unlimited">不限</span>
+                            <div class="optionList optionFixList optionListHid clearfix">
+                                <div id="promotionf-all" clicks="false" class="optionList-item">全部促销优惠</div>
+                                <div id="promotionf-2" clicks="false" class="optionList-item">天天特价</div>
+                                <div id="promotionf-3" clicks="false" class="optionList-item">门店新客</div>
+                                <div id="promotionf-4" clicks="false" class="optionList-item">每日特惠</div>
+                                <div id="promotionf-43" clicks="false" class="optionList-item">99酒店节</div>
+                                <div id="promotionf-24" clicks="false" class="optionList-item">开业特惠</div>
+                            </div>
+                        </div>
+                        <div id="J_FeatureFilterList" class="SeniorWrap hidden">
+                            <span class="btn-unlimited">不限</span>
+                            <div class="optionList optionFixList optionListHid clearfix">
+                                <div id="feature-256" clicks="false" class=" optionList-item">公寓</div>
+                                <div id="feature-37" clicks="false" class=" optionList-item">客栈</div>
+                                <div id="feature-254" clicks="false" class=" optionList-item">民居</div>
+                                <div id="feature-114" clicks="false" class=" optionList-item">别墅</div>
+                                <div id="feature-35" clicks="false" class=" optionList-item">青年旅舍</div>
+                                <div id="feature-10" clicks="false" class=" optionList-item">四合院</div>
+                                <div id="feature-14" clicks="false" class=" optionList-item">纳西风情</div>
+                                <div id="feature-19" clicks="false" class=" optionList-item">休闲度假</div>
+                                <div id="feature-121" clicks="false" class=" optionList-item">亲子酒店</div>
+                                <div id="feature-123" clicks="false" class=" optionList-item">浪漫情侣</div>
+                                <div id="feature-190" clicks="false" class=" optionList-item">商务出行</div>
+                                <div id="feature-90" clicks="false" class=" optionList-item">农家乐</div>
+                                <div id="feature-257" clicks="false" class=" optionList-item">其它民宿</div>
+                                <div id="feature-113" clicks="false" class=" optionList-item">精品酒店</div>
+                                <div id="feature-112" clicks="false" class=" optionList-item">设计师酒店</div>
+                            </div>
+                        </div>
+                        <div id="J_BrandFilterList" class="SeniorWrapBrand SeniorWrap hidden">
+                            <span class="btn-unlimited">不限</span>
+                            <ul class="selectSecList clearfix">
+                                <li class="cur" data-target="J_brandlist1">高端连锁</li>
+                            </ul>
+                            <div class="optionList optionFixBrandList optionListHid clearfix J_brandlist1 ">
+                                <div id="type-1" clicks="false" class="optionList-item">全部高端连锁</div>
+                                <div id="brand-948" clicks="false" class="optionList-item">花筑</div>
+                                <div id="brand-934" clicks="false" class="optionList-item">久栖</div>
+                            </div>
+                        </div>
+                        <div id="J_FacilityFilterList" class="SeniorWrap hidden">
+                            <span class="btn-unlimited">不限</span>
+                            <div class="optionList optionFixBrandList optionListHid clearfix">
+                                <div id="equip-9"  clicks="false" class=" optionList-item">免费wifi上网</div>
+                                <div id="equip-1"  clicks="false" class=" optionList-item">免费有线宽带</div>
+                                <div id="equip-18" clicks="false" class=" optionList-item">免费停车</div>
+                                <div id="equip-2"  clicks="false" class=" optionList-item">停车场</div>
+                                <div id="equip-19" clicks="false" class=" optionList-item">代客泊车</div>
+                                <div id="equip-8"  clicks="false" class=" optionList-item">接送服务</div>
+                                <div id="equip-13" clicks="false" class=" optionList-item">新开业/新装修</div>
+                                <div id="equip-4"  clicks="false" class=" optionList-item">穿梭机场班车</div>
+                                <div id="equip-15" clicks="false" class=" optionList-item">增值税专用发票</div>
+                                <div id="equip-3"  clicks="false" class=" optionList-item">游泳池</div>
+                                <div id="equip-5"  clicks="false" class=" optionList-item">健身房</div>
+                                <div id="equip-20" clicks="false" class=" optionList-item">SPA</div>
+                                <div id="equip-21" clicks="false" class=" optionList-item">酒吧</div>
+                                <div id="equip-22" clicks="false" class=" optionList-item">餐厅</div>
+                                <div id="equip-23" clicks="false" class=" optionList-item">棋牌室</div>
+                                <div id="equip-24" clicks="false" class=" optionList-item">高尔夫球场</div>
+                                <div id="equip-25" clicks="false" class=" optionList-item">会议设施</div>
+                                <div id="equip-26" clicks="false" class=" optionList-item">商务中心</div>
+                                <div id="equip-27" clicks="false" class=" optionList-item">行李寄存</div>
+                                <div id="equip-28" clicks="false" class=" optionList-item">叫醒服务</div>
+                                <div id="equip-29" clicks="false" class=" optionList-item">吸烟区</div>
+                                <div id="equip-30" clicks="false" class=" optionList-item">洗衣服务</div>
+                                <div id="equip-14" clicks="false" class=" optionList-item">允许携带宠物</div>
+                            </div>
+                        </div>
+                        <div id="J_BedFilterList" class="SeniorWrap hidden">
+                            <div class="optionList optionFixList optionListHid clearfix">
+                                <div id="bed-11" clicks="false" class=" optionList-item">大床</div>
+                                <div id="bed-12" clicks="false" class=" optionList-item">双床</div>
+                                <div id="bed-7" clicks="false" class=" optionList-item">三人/家庭房</div>
+                            </div>
+                        </div>
+                        <div id="J_BreakfastFilterList" class="SeniorWrap hidden">
+                            <div class="optionList optionFixList optionListHid clearfix">
+                                <div id="breakfast-6" clicks="false" class=" optionList-item">含早餐</div>
+                                <div id="breakfast-16" clicks="false" class=" optionList-item">单份早餐</div>
+                                <div id="breakfast-17" clicks="false" class=" optionList-item">双份早餐</div>
+                            </div>
+                        </div>
+                        <div id="J_ScoreFilterList" class="SeniorWrap hidden">
+                            <div class="optionList optionFixList optionListHid clearfix">
+                                <div id="score-10" clicks="false" class=" optionList-item">4.5分以上</div>
+                                <div id="score-2" clicks="false" class=" optionList-item">4.0分以上</div>
+                                <div id="score-3" clicks="false" class=" optionList-item">3.5分以上</div>
+                                <div id="score-4" clicks="false"  class=" optionList-item">3.0分以上</div>
+                            </div>
+                        </div>
+                        <div id="J_CommentCountFilterList" class="SeniorWrap hidden">
+                            <div class="optionList optionFixList optionListHid clearfix">
+                                <div id="CommentCount-1" clicks="false" class=" optionList-item">5条以上</div>
+                                <div id="CommentCount-2" clicks="false" class=" optionList-item">10条以上</div>
+                                <div id="CommentCount-3" clicks="false" class=" optionList-item">20条以上</div>
+                                <div id="CommentCount-4" clicks="false" class=" optionList-item">50条以上</div>
+                            </div>
+                        </div>
+                        <div id="J_PaymentTypeFilterList" class="SeniorWrap hidden">
+                            <div class="optionList optionFixList optionListHid clearfix">
+                                <div id="PaymentType-1" clicks="false" class="optionList-item">在线付款</div>
+                                <div id="PaymentType-2" clicks="false" class="optionList-item">到店付款</div>
+                                <div id="PaymentType-3" clicks="false" class="optionList-item">闪住</div>
+                            </div>
+                        </div>
+                        <div id="J_CtripServiceFilterList" class="SeniorWrap hidden">
+                            <span data-dopost="T" data-type="CtripService" class="btn-unlimited">不限</span>
+                            <div class="optionList optionFixList optionListHid clearfix">
+                                <div id="CtripService-1" clicks="false" class="optionList-item">在线选房</div>
+                                <div id="CtripService-2" clicks="false" class="optionList-item">空气清新房</div>
+                                <div id="CtripService-3" clicks="false" class="optionList-item">携程行李寄送</div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foot clearfix">
+            <div class="dls clearfix">
+                <dl>
+                    <dt>旅游资讯</dt>
+                    <dd>宾馆索引</dd>
+                    <dd>机票索引</dd>
+                    <dd>旅游索引</dd>
+                    <dd>邮轮索引</dd>
+                    <dd>用车索引</dd>
+                </dl>
+                <dl>
+                    <dt> </dt>
+                    <dd>攻略索引</dd>
+                    <dd>网站导航</dd>
+                    <dd>火车票索引</dd>
+                    <dd>企业差旅索引</dd>
+                </dl>
+            </div>
+
+            <div class="dls clearfix">
+                <dl>
+                    <dt>加盟合作</dt>
+                    <dd>分销联盟</dd>
+                    <dd>广告业务</dd>
+                    <dd>保险代理</dd>
+                    <dd>酒店加盟</dd>
+                    <dd>智慧旅游</dd>
+                </dl>
+                <dl>
+                    <dt> </dt>
+                    <dd>友情链接</dd>
+                    <dd>企业礼品卡采购</dd>
+                    <dd>代理合作</dd>
+                    <dd>目的地及景区合作</dd>
+                    <dd>更多加盟合作</dd>
+                </dl>
+            </div>
+
+            <div class="dls clearfix">
+                <dl>
+                    <dt>关于泸沽湖</dt>
+                    <dd>关于泸沽湖</dd>
+                    <dd>联系我们</dd>
+                    <dd>企业公民</dd>
+                    <dd>用户协议</dd>
+                    <dd>安全中心</dd>
+                </dl>
+                <dl>
+                    <dt></dt>
+                    <dd>泸沽湖热点</dd>
+                    <dd>诚聘英才</dd>
+                    <dd>旅游度假资质</dd>
+                    <dd>营业执照</dd>
+                </dl>
+            </div>
+
+            <div class="erweima">
+                <img src="../images/erweima.png" alt="">
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            var aLi=$('.selectList li');
+            var ai=$('.selectList li i');
+            var aDiv=$('.SeniorWrap');
+            aLi.bind('click',function(){
+                var index=$(this).index();
+                ai.removeClass('icon_down');
+                ai.eq(index).addClass('icon_down');
+                aLi.removeClass('cur');
+                $(this).addClass('cur');
+                aDiv.hide();
+                aDiv.eq(index).show();
+            });
+            aDiv.each(function(){
+                $(this).find('.optionList-item').on('click',function(){
+                    if($(this).attr('clicks')=="false"){
+                        $(this).attr('clicks','true');
+                        $(this).addClass('cur')
+                    }else{
+                        $(this).attr('clicks','false');
+                        $(this).removeClass('cur')
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
