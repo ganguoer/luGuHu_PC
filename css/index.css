@@ -75,6 +75,7 @@ to {left:0;}
 
 
 
+
 .mb140{margin-bottom: 140px;}
 
 .content_warp{background: url(../images/bgs_02.jpg) no-repeat #7dbfe8;width: 100%; padding: 350px 0 170px 0}
@@ -169,3 +170,24 @@ to {left:0;}
 .icon_right{border-left:5px solid #0066cc;border-right:0 none;border-top:5px dashed transparent;border-bottom:5px dashed transparent;}
 .icon_up{border-bottom:5px solid #0066cc;border-top:0 none;border-left:5px dashed transparent;border-right:5px dashed transparent;}
 .icon_down{border-top:5px solid #0066cc;border-bottom:0 none;border-left:5px dashed transparent;border-right:5px dashed transparent;}
+
+
+
+
+/*.erweima{*/
+    /*float: left;*/
+/*}*/
+/*.foot .dls dl{*/
+    /*float: left;*/
+    /*padding-right: 36px;*/
+/*}*/
+/*.foot .dls dl dt{*/
+    /*font-size: 16px;*/
+    /*color: #fff;*/
+/*}*/
+/*.foot .dls dl dd{*/
+    /*font-size: 14px;*/
+    /*color: #fff;*/
+
+/*}*/
+
