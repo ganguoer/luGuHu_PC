@@ -122,7 +122,7 @@ to {left:0;}
 .filterItem-bd .selectList li{ float: left; padding: 5px 13px 9px 17px; margin:0 0 -1px 5px; border:1px solid transparent; border-radius: 3px 3px 0 0; cursor: default;}
 .filterItem-bd .selectList li.cur{ color: #06c; border: 1px solid #39f; border-bottom: none; padding:6px 13px 9px 17px}
 .filterItem-bd .selectList li:hover{ color: #06c;}
-.filterItem-bd .selectList .num{ display: inline-block; vertical-align: middle; padding: 0 5px; margin-left: 3px; height: 14px; line-height: 14px; color: #fff; background-color: #39f; border-radius: 7px;}
+.filterItem-bd .selectList .num{ display: inline-block; vertical-align: middle; padding: 0 5px; margin-left: 3px; height: 14px; line-height: 14px; color: #fff; background-color: #39f; border-radius: 7px;display: none}
 /*=e 筛选标题list*/
 /*=s 二级标题*/
 .filterItem-bd .selectSecList{ border-bottom: 1px solid #f1f1f1;}
@@ -141,38 +141,31 @@ to {left:0;}
 .filterItem-bd .optionList .ico-hook{ position: absolute; right: -1px; bottom: -1px; width: 11px; height: 11px; background-position:  -233px -288px;}
 .filterItem-bd .optionList .optionList-more:hover{ color: #06c;}
 /*=e 单个选项不定宽*/
-/*=s 热门商区*/
-.filterItemHot .optionList-coupon{ padding-right: 15px !important; background-image:url(//pic.c-ctrip.com/hotels121118/un_ico_searchresult.png?2013320.png); background-repeat: no-repeat; background-position: 100% 10px;}
-.filterItemHot .coupon_open{ background-position: 100% -22px;}
-.filterItemHot .optionList-coupon .available_coupon_pop{ top: 32px; left: -1px; z-index: 1; text-align: left;}
-/*=e 热门商区*/
-/*=s 模块-位置区域*/
-.filterItemLocal .optionListHid{ padding-right: 70px;}
-.filterItemLocal .optionFixList{ padding-right: 0;}
-.filterItemLocal .optionListHid{ height: 57px; overflow: hidden;}
-.filterItemLocal .icon_down,.filterItemLocal .icon_up{ margin-left: 5px;}
-.filterItemLocal .optionList .optionList-more{ bottom: 18px;}
-.filterItemLocal .urbanBox{ padding-left: 60px;}
-.filterItemLocal .urbanBox + .urbanBox{ margin-bottom: 10px;}
-.filterItemLocal .urbanBox-t{ float: left; margin: 18px 0 0 -60px; color: #666;}
-.filterItemLocal .urbanBox .optionList{ margin-bottom: 0;}
-/*=s 模块-位置区域*/
-/*=s 模块-星级价格*/
-.filterItemStar .optionList{ margin-bottom: 0;}
-.filterItemStar .optionList + .optionList{ padding-top: 0; margin-bottom: 10px;}
-.filterItemStar .customPrice{ float: left; margin-left: 55px; padding-top: 8px;}
-.filterItemStar .customPrice-line{ display: inline-block; *display: inline; vertical-align: middle; *padding: 0 3px; *zoom:1;}
-.filterItemStar .customPrice-input{ display:inline-block; *display: inline; vertical-align: middle; padding: 3px; width: 60px; height:18px; border:1px solid #ccc; *zoom:1;}
-.filterItemStar .customPrice-input:hover{ border-color: #7be;}
-.filterItemStar .customPrice-btn{ display: inline-block; vertical-align: middle; padding: 0 10px; margin-left: 6px; height: 26px; background-color: #1182e3; color: #fff; font-size: 14px; border: 0 none; border-radius: 3px; outline: none;}
-.filterItemStar .customPrice-btn:hover,.content_warp .search_1 .btn_search:hover{ background-color: #1a8df0;}
-.icon_down,.icon_right,.icon_up{display:inline-block;width:0;height:0;overflow:hidden;line-height:0;font-size:0;vertical-align:middle;cursor:pointer;}
-.icon_right{border-left:5px solid #0066cc;border-right:0 none;border-top:5px dashed transparent;border-bottom:5px dashed transparent;}
-.icon_up{border-bottom:5px solid #0066cc;border-top:0 none;border-left:5px dashed transparent;border-right:5px dashed transparent;}
-.icon_down{border-top:5px solid #0066cc;border-bottom:0 none;border-left:5px dashed transparent;border-right:5px dashed transparent;}
 
-
-
+.hotellist{margin-top: 35px;}
+.hotellist .imgwarp{width: 342px; height: 220px;}
+.hotellist .introduce{margin-left: 38px;width: 360px}
+.hotellist ul li{border-bottom: solid 1px #b1b1b1;padding-bottom: 25px;margin-bottom: 25px}
+.hotellist .introduce .paim{background-position: -201px -100px;width: 21px;height: 24px;display: inline-block; text-align: center;color: #fff;font-size: 14px; line-height: 24px;margin-right: 8px}
+.hotellist .introduce h3{font-size: 18px;color: #1182e3}
+.hotellist .introduce .tits1{font-size: 14px; color: #666;padding-top: 20px; line-height: 22px; max-height: 44px; overflow: hidden;}
+.hotellist .introduce .tits2{font-size: 14px; color: #989898}
+.hotellist .introduce .tips{margin-top: 20px;}
+.hotellist .introduce .tips span{display: inline-block;padding:0 3px; color: #fff;margin-right: 8px;background: #ffd200}
+.hotellist .introduce .iconsmore{margin-top: 30px;}
+.hotellist .introduce .iconsmore span{display: inline-block;width: 24px; height: 24px;margin-right: 10px}
+.hotellist .introduce .tip1{background-position: -100px -100px}
+.hotellist .introduce .tip2{background-position: -100px -200px}
+.hotellist .introduce .tip3{background-position: -100px -300px}
+.hotellist .introduce .tip4{background-position: -100px -400px}
+.hotellist .introduce .tip5{background-position: -200px 0px}
+.hotellist .introduce2{margin-left: 50px;}
+.hotellist .introduce2 p{line-height: 28px}
+.hotellist .introduce2 p span{color: #fb8221}
+.hotellist .lookmore{margin-left: 70px;}
+.hotellist .price{font-size: 30px; color: #fa631e; font-weight: 600}
+.hotellist .price span{font-size: 14px;}
+.hotellist .lookmore a{width: 105px; height: 36px; line-height: 36px;text-align: center;color: #fff;background: #fb8221;display: block;border-radius: 4px;font-size: 16px;margin-top: 15px}
 
 /*.erweima{*/
     /*float: left;*/
@@ -191,3 +184,19 @@ to {left:0;}
 
 /*}*/
 
+.ticket_warp{background: url(../images/ticket1.jpg) no-repeat #7dbfe8;}
+.ticket_warp .inner_warp,.tourist_warp .inner_warp{background: rgba(255,255,255,.75)}
+.list_ticket{margin-top: 30px;}
+.list_ticket ul{margin-bottom: 15px}
+.list_ticket ul li{width: 370px;height: 253px;float: left;box-shadow: 3px 4px 14px #97aec6;margin:0 28px 10px 0;}
+.list_ticket ul li:nth-child(3n){margin-right: 0}
+.list_ticket .top_cont{width: 360px;height: 205px;border:solid 5px #ffd200; border-bottom: none;position: relative; overflow: hidden}
+.list_ticket .top_cont .img_detail{height: 36px; line-height: 36px;background: rgba(0,0,0,.5);color: #fff; text-align: center;width: 100%;position: absolute;left: 0; bottom: 0}
+.list_ticket .top_cont img{width: 100%}
+.list_ticket .bottom_cont{height: 43px;line-height: 43px;background: #fff;padding: 0 10px}
+.list_ticket .money{font-size: 26px; color: #fb2c0b}
+.list_ticket .bottom_cont{height: 43px;line-height: 43px;background: #fff;padding: 0 10px}
+.list_ticket .moneytip{color:#fb2c0b }
+.list_ticket .yj{text-decoration: line-through; font-size: 20px;color: #ababab}
+.list_ticket .agrees{color: #ababab;}
+.tourist_warp{background: url(../images/ticket.jpg) no-repeat #7dbfe8;}
