@@ -64,17 +64,17 @@
                 </div>
                 <div class="lf address">
                     入住：
-                    <input type="text" value="2018-08-09">
+                    <input type="text" value="2018-08-09" class="jcDate">
                 </div>
                 <div class="lf address">
                     退房：
-                    <input type="text" value="2018-08-09">
+                    <input type="text" value="2018-08-09" class="jcDate">
                 </div>
                 <div class="lf homenum">
                     <div class="clearfix">
                         <span class="lf">房间数:</span>
                         <div class="lf homesel">
-                            <p>1间</p>
+                            <p class="btns">1间</p>
                             <span class="xuanze"></span>
                             <ul>
                                 <li>1间</li>
@@ -88,7 +88,7 @@
                     <div class="clearfix">
                         <span class="lf">住客数:</span>
                         <div class="lf homesel">
-                            <p>1成人</p>
+                            <p class="btns">1成人</p>
                             <span class="xuanze"></span>
                             <ul>
                                 <li>1成人</li>
@@ -331,9 +331,39 @@
             <p>技术支持：中智游（北京）科技有限公司</p>
         </div>
     </div>
+<<<<<<< HEAD:pages/hotel_reservation.html
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.pagination.js"></script>
+=======
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.pagination.js"></script>
+    <script src="./js/jQuery-jcDate.js"></script>
+>>>>>>> 02f0885dddffdb6ccd54138f2657b37f88c9587f:hotel_reservation.html
     <script>
+        $(function(){
+            $('.homenum').each(function(){
+                var oul=$(this).find('.homesel ul');
+                var aLi=oul.find('li');
+                var obtn=$(this).find('.btns');
+                var oChose=$(this).find('.xuanze');
+                obtn.add(oChose).bind('click',function(){
+                    oul.show();
+                })
+                aLi.bind('click',function(){
+                    obtn.html($(this).html());
+                    oul.hide()
+                })
+            });
+            $(".jcDate").jcDate({
+				IcoClass: "jcDateIco",
+				Event: "click",
+				Speed: 100,
+				Left: 0,
+				Top: 28,
+				format: "-",
+				Timeout: 100
+			});
+        })
         $(function () {
             var aLis = $('.navselect li');
             aLis.on('click', function () {
