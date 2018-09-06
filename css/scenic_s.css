@@ -738,6 +738,17 @@ textarea::placeholder{
     color: #222;
     padding-left: 10px;
 }
+.t_detail .t_select select{
+    border: 1px solid #7d7d7d;
+    height: 28px;
+    line-height: 28px;
+    color: #222;
+    width: 460px;
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+
 .t_detail .t_select .icon-xiasanjiao{
     font-size: 12px;
     position: absolute;
