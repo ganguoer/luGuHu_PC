@@ -733,10 +733,10 @@ textarea::placeholder{
     color: #222;
     width: 460px;
     background-color: #fff;
+    padding-left: 10px;
 }
 .t_detail .t_select input::placeholder{
     color: #222;
-    padding-left: 10px;
 }
 .t_detail .t_select select{
     border: 1px solid #7d7d7d;
