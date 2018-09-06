@@ -64,11 +64,11 @@
                 </div>
                 <div class="lf address">
                     入住：
-                    <input type="text" value="2018-08-09">
+                    <input type="text" value="2018-08-09" class="jcDate">
                 </div>
                 <div class="lf address">
                     退房：
-                    <input type="text" value="2018-08-09">
+                    <input type="text" value="2018-08-09" class="jcDate">
                 </div>
                 <div class="lf homenum">
                     <div class="clearfix">
@@ -334,20 +334,31 @@
     </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.pagination.js"></script>
+    <script src="./js/jQuery-jcDate.js"></script>
     <script>
         $(function(){
             $('.homenum').each(function(){
                 var oul=$(this).find('.homesel ul');
                 var aLi=oul.find('li');
                 var obtn=$(this).find('.btns');
-                obtn.bind('click',function(){
-                    oul.show()
+                var oChose=$(this).find('.xuanze');
+                obtn.add(oChose).bind('click',function(){
+                    oul.show();
                 })
                 aLi.bind('click',function(){
                     obtn.html($(this).html());
                     oul.hide()
                 })
-            })
+            });
+            $(".jcDate").jcDate({
+				IcoClass: "jcDateIco",
+				Event: "click",
+				Speed: 100,
+				Left: 0,
+				Top: 28,
+				format: "-",
+				Timeout: 100
+			});
         })
         $(function () {
             var aLis = $('.navselect li');
