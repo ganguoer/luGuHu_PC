@@ -184,12 +184,12 @@ select {
   float: left;
   padding-right: 36px;
 }
-.foot .dls dl dt{
+.foot .dls dl dt a{
   font-size: 16px;
   color: #fff;
   line-height: 32px;
 }
-.foot .dls dl dd{
+.foot .dls dl dd a{
   font-size: 14px;
   color: #fff;
 }

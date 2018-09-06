@@ -47,10 +47,28 @@
     padding: 25px 0 0 20px;
 }
 .s_sl{
-    width: 544px;
+    width: 510px;
     height: 350px;
-    border: 1px solid #000;
 }
+
+/*------------轮播图详细代码 开始---------------*/
+
+.ban{ width:500px; height:349px; position:relative; overflow:hidden;margin:0px auto 0 auto;}
+.ban2{ width:500px; height:286px; position:relative; overflow:hidden;}
+.ban2 ul{ position:absolute; left:0; top:0;}
+.ban2 ul li{ width:500px; height:286px;}
+.prev{ float:left; cursor:pointer;}
+.num{ height:82px;overflow:hidden; width:430px; position:relative;float:left;}
+.min_pic{ padding-top:10px; width:500px;}
+.num ul{ position:absolute; left:0; top:0;}
+.num ul li{ width:80px; height:51px; margin-right:5px; padding:1px;}
+.num ul li.on{ border:1px solid #f23f00; padding:0;}
+.prev_btn1{ width:16px; text-align:center; height:18px; margin-top:16px; margin-right:20px; cursor:pointer; float:left;}
+.next_btn1{  width:16px; text-align:center; height:18px; margin-top:16px;cursor:pointer;float:right;}
+.prev1{ position:absolute; top:125px; left:0px; width:21px; height:32px;z-index:9;cursor:pointer;}
+.next1{ position:absolute; top:125px; right:0px; width:21px; height:32px;z-index:9;cursor:pointer;}
+
+/*---------轮播图详细代码 结束----------*/
 
 .s_sr{
     margin-left: 42px;
@@ -69,7 +87,7 @@
 .s_price{
     height: 50px;
     line-height: 50px;
-    width: 590px;
+    width: 626px;
     background-color: #fff5e6;
     font-size: 14px;
     color: #f23f00;
@@ -109,7 +127,7 @@ p>img{
     border-bottom: 1px solid #1182e3;
     height: 34px;
 }
-.s_tabnav span{
+.s_tabnav .topLink{
     color: #666;
     float: left;
     height: 34px;
@@ -122,7 +140,7 @@ p>img{
     border-bottom: 0;
     border-top: 0;
 }
-.s_tabnav span.s_on{
+.s_tabnav a.s_on{
     background-color: #1182e3;
     color: #fff;
 }
@@ -387,6 +405,16 @@ textarea::placeholder{
     width: 86px;
     height: 28px;
 }
+#code{
+    font-family:Arial;
+    font-style:italic;
+    font-weight:bold;
+    border:0;
+    letter-spacing:2px;
+    color:blue;
+    background-color: #f7a93b;
+    border: 1px solid #e9e9e9;
+}
 .nicheng .deng{
     width: 59px;
     height: 28px;
@@ -409,6 +437,7 @@ textarea::placeholder{
     text-align: center;
     margin-left: 30px;
     border-radius: 3px;
+    border: 0;
 }
 .nicheng .yanzh{
     vertical-align: middle;
@@ -568,12 +597,222 @@ textarea::placeholder{
 }
 
 
+/*---------------旅游线路-----------------*/
+.t_banner{
+    background: url('../images/t_banner.jpg');
+    repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    height: 875px;
+    width: 100%;
+}
+
+.t_swiper{
+    height: 580px;
+    background-color: #f8f8f8;
+}
+.s_price>strong{
+    font-size: 24px;
+}
+.s_price>span{
+    color: #b9b9b9;
+}
+
+.t_scheduling{
+     padding: 28px 60px 20px;
+     border-bottom: 1px solid #e9e9e9;
+}
+.t_scheduling .xch{
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #1182e3;
+}
+.t_scheduling ul{
+    margin-top: 16px;
+}
+.t_scheduling ul li{
+    font-size: 14px;
+    color: #222222;
+    line-height:28px;
+}
+.t_scheduling ul li:first-child span{
+    padding-left: 0;
+}
+.t_scheduling ul li span{
+    color: #666666;
+    padding-left:20px;
+}
+.t_day{
+    padding: 20px 40px;
+    margin-left: 80px;
+    border-left: 1px solid #e9e9e9;
+}
+.t_day ul li h5{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+}
+.t_day ul li.t_dayicon{
+    position: relative;
+}
+.t_day ul li .icon1{
+    position: absolute;
+    left: -40px;
+    top: -20px;
+}
+.t_day ul li h5 span.icon-car{
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.t_day .icon1 span.icon-dian{
+    font-size: 46px;
+    left: -18px;
+    top: 37px;
+}
+.t_day .icon1 span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    left: -12px;
+    top: 43px;
+}
+
+.t_day ul li{
+    font-size: 14px;
+    color: #222222;
+    border-bottom: 1px solid #e9e9e9;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.t_day .t_day1 ul li .day_tit{
+    font-size: 16px;
+}
+.t_day .t_day1 ul li .day_color{
+    color: #ff852b;
+}
+.t_day .t_day1 ul li .t_dayimg{
+    margin: 20px auto 0;
+    text-align: center;
+}
+.t_day ul li dl dd{
+    color: #666666;
+    line-height: 30px;
+}
+.t_day ul li dl dd span.icon-heart{
+    font-size: 12px;
+    padding-right: 6px;
+}
+.t_day ul{}
 
 
 
+.t_detail{
+    width: 560px;
+    height: 198px;
+    border: 1px solid #d2d2d2;
+    background-color: #fff5e6;
+    margin-top: 20px;
+    padding: 12px 15px;
+}
+.t_detail .t_select{
+    font-size: 14px;
+    color: #666666;
+    line-height: 43px;
+    position: relative;
+}
 
+.t_detail .t_select input{
+    border: 1px solid #7d7d7d;
+    height: 28px;
+    line-height: 28px;
+    color: #222;
+    width: 460px;
+    background-color: #fff;
+}
+.t_detail .t_select input::placeholder{
+    color: #222;
+    padding-left: 10px;
+}
+.t_detail .t_select .icon-xiasanjiao{
+    font-size: 12px;
+    position: absolute;
+    right: 35px;
+    top: 17px;
+}
 
+.t_detail .t_select .t_select1{
+    display: inline-block;
+}
+.t_detail .t_select .t_select1 img{
+    vertical-align: middle;
+}
+.t_detail .t_select .t_select1 input{
+    width: 53px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #d1d1d1;
+    text-align: center;
+    margin: 0px -5px ;
+}
+.t_detail .t_yuding{
+    font-weight: 700;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fb8221;
+    border-radius: 3px;
+    color: #fff;
+    margin-left: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
 
-
+.jiaotong>p.t_tc{
+    text-indent: 4em;
+    font-size: 14px;
+    color: #222222;
+    line-height: 30px;
+}
+.jiaotong>p.t_jy{
+    font-size: 14px;
+    color: #222222;
+    line-height: 30px;
+    text-indent: 0em;
+    padding: 0 55px 0 90px;
+}
+.t_yh{
+    position: relative;
+}
+.t_yh img{
+    width: 57px;
+    height: 25px;
+}
+.t_yh>span{
+    color: #fb8221;
+    font-size: 12px;
+    padding-top: 4px;
+    position: absolute;
+    left: 100px;
+}
+.t_yh>span.yhp2{
+    left: 170px;
+}
+.t_yh>span.yhp3{
+    left: 240px;
+}
+p>.tese{
+    background-color: #ffd200;
+    border-radius: 3px;
+    padding: 2px 8px;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 4px;
+}
 
 
