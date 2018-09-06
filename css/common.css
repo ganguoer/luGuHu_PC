@@ -85,7 +85,7 @@ a:focus, input, button, select, textarea{outline:0 none}
 .clearfix:after{clear:both}
 .fl,.lf{float:left}
 .fr,.rf{float:right}
-.pr{position:relative}
+
 .pa{position:absolute}
 .hand{cursor:pointer;}
 .block{display:block;}
@@ -136,7 +136,7 @@ select {
 .navbanner .banner_cont{width: 1220px; margin: 0 auto}
 .navbanner .navselect{height: 68px; line-height: 68px;margin:25px 0 0 20px;}
 .navbanner .navselect li{float: left; font-size: 16px; margin-left: 45px; padding: 0 5px}
-.navbanner .navselect li.active{ border-bottom: solid 3px #5750ff;}
+.navbanner .navselect li.active,.navbanner .navselect li:active{ border-bottom: solid 3px #5750ff;}
 .navbanner .navselect li.active a{color:#5750ff}
 .navbanner .nav_rf{height: 36px; margin-top: 44px;margin-right: 170px}
 .iconcom{background: url(../images/icon1.png) no-repeat;}
@@ -162,11 +162,18 @@ select {
 
 .foot .dls{
   float: left;
+  margin-right: 30px;
+  border-right: 1px solid #fff;
+}
+.foot .dls:last-child{
+  border-right:0px solid #fff!important;
+
   margin-right: 42px;
   border-right: 1px solid #fff;
 }
 .foot .dls:last-child{
   border-right:0;
+
 }
 
 .erweima{
@@ -185,8 +192,9 @@ select {
 .foot .dls dl dd a{
   font-size: 14px;
   color: #fff;
-  line-height: 32px;
 }
+.pr{position:relative}
+.hidden{display: none}
 .foot .dls dl dd.xia{
   margin-top: 32px;
 }
@@ -199,4 +207,3 @@ select {
   color: #fff;
   line-height: 26px;
 }
-

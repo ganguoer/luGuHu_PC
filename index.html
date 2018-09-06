@@ -19,16 +19,16 @@
             <div class="lf">
                 <ul class="clearfix navselect">
                     <li class="active">
-                        <a href="#">首页</a>
+                        <a href="./index.html">首页</a>
                     </li>
                     <li>
-                        <a href="#">景点门票</a>
+                        <a href="./ticket_spots.html">景点门票</a>
                     </li>
                     <li>
-                        <a href="#">酒店预订</a>
+                        <a href="./hotel_reservation.html">酒店预订</a>
                     </li>
                     <li>
-                        <a href="#">旅游线路</a>
+                        <a href="./tourist_rote.html">旅游线路</a>
                     </li>
                 </ul>
             </div>
@@ -217,7 +217,7 @@
             </div>
         </div>
     </div>
-    <div class="tocket_content mt65">
+    <div class="tocket_content mt65 mb140">
             <h3 class="top_title">旅游路线</h3>
             <div class="mores">
                 <a class="more" href="#">更多》</a>
@@ -282,9 +282,80 @@
                 </div>
             </div>
         </div>
-
+        <div class="footer">
+                <div class="foot clearfix">
+            
+                    <div class="dls clearfix">
+                        <dl>
+                            <dt>旅游资讯</dt>
+                            <dd>宾馆索引</dd>
+                            <dd>机票索引</dd>
+                            <dd>旅游索引</dd>
+                            <dd>邮轮索引</dd>
+                            <dd>用车索引</dd>
+                        </dl>
+                        <dl>
+                            <dt>  </dt>
+                            <dd>攻略索引</dd>
+                            <dd>网站导航</dd>
+                            <dd>火车票索引</dd>
+                            <dd>企业差旅索引</dd>
+                        </dl>
+                    </div>
+            
+                    <div class="dls clearfix">
+                        <dl>
+                            <dt>加盟合作</dt>
+                            <dd>分销联盟</dd>
+                            <dd>广告业务</dd>
+                            <dd>保险代理</dd>
+                            <dd>酒店加盟</dd>
+                            <dd>智慧旅游</dd>
+                        </dl>
+                        <dl>
+                            <dt>  </dt>
+                            <dd>友情链接</dd>
+                            <dd>企业礼品卡采购</dd>
+                            <dd>代理合作</dd>
+                            <dd>目的地及景区合作</dd>
+                            <dd>更多加盟合作</dd>
+                        </dl>
+                    </div>
+            
+                    <div class="dls clearfix">
+                        <dl>
+                            <dt>关于泸沽湖</dt>
+                            <dd>关于泸沽湖</dd>
+                            <dd>联系我们</dd>
+                            <dd>企业公民</dd>
+                            <dd>用户协议</dd>
+                            <dd>安全中心</dd>
+                        </dl>
+                        <dl>
+                            <dt></dt>
+                            <dd>泸沽湖热点</dd>
+                            <dd>诚聘英才</dd>
+                            <dd>旅游度假资质</dd>
+                            <dd>营业执照</dd>
+                        </dl>
+                    </div>
+                    
+                    <div class="erweima">
+                        <img src="../images/erweima.png" alt="">
+                    </div>
+            
+            
+                </div>
+            </div>
     <script src="./js/jquery.min.js"></script>
     <script>
+         $(function(){
+           var aLis=$('.navselect li');
+           aLis.on('click',function(){
+               aLis.removeClass('active');
+               $(this).addClass('active')
+           }) 
+        })
         $(function () {
             var h = $(window).height();
             $('.banner_ds').css({ "height": h });
