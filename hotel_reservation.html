@@ -74,7 +74,7 @@
                     <div class="clearfix">
                         <span class="lf">房间数:</span>
                         <div class="lf homesel">
-                            <p>1间</p>
+                            <p class="btns">1间</p>
                             <span class="xuanze"></span>
                             <ul>
                                 <li>1间</li>
@@ -88,7 +88,7 @@
                     <div class="clearfix">
                         <span class="lf">住客数:</span>
                         <div class="lf homesel">
-                            <p>1成人</p>
+                            <p class="btns">1成人</p>
                             <span class="xuanze"></span>
                             <ul>
                                 <li>1成人</li>
@@ -335,6 +335,20 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.pagination.js"></script>
     <script>
+        $(function(){
+            $('.homenum').each(function(){
+                var oul=$(this).find('.homesel ul');
+                var aLi=oul.find('li');
+                var obtn=$(this).find('.btns');
+                obtn.bind('click',function(){
+                    oul.show()
+                })
+                aLi.bind('click',function(){
+                    obtn.html($(this).html());
+                    oul.hide()
+                })
+            })
+        })
         $(function () {
             var aLis = $('.navselect li');
             aLis.on('click', function () {
