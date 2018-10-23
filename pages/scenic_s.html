@@ -76,7 +76,7 @@
                     <div class="ban2" id="ban_pic1">
                         <div class="prev1" id="prev1"><img src="../images/index_tab_l.png" width="21" height="32"  alt=""></div>
                         <div class="next1" id="next1"><img src="../images/index_tab_r.png" width="21" height="32"  alt=""></div>
-                        <ul>
+                        <ul class="swiper_render">
                             <li><a href="javascript:;"><img src="../images/t_lb1.png" width="500"  height="286" alt=""></a></li>
                             <li><a href="javascript:;"><img src="../images/t_lb2.png" width="500"  height="286" alt=""></a></li>
                             <li><a href="javascript:;"><img src="../images/t_lb3.png" width="500"  height="286" alt=""></a></li>
@@ -111,20 +111,7 @@
             </div>
 
             <div class="s_sr fl">
-                <h5>泸沽湖观景台</h5>
-                <p> <span class="icon-adress"></span> 云南省宁蒗县泸沽湖镇</p>
-                <div class="s_price">
-                   ￥<strong>100</strong> <span>起</span>
-                </div>
-                <p>开放时间：08:00-18:00 </p>
-                <p class="s_fuwu">服务承诺：<span>如实描述</span> <span>低价保障</span> <span>入园保障</span> <span>特殊退订保障</span></p>
-                <p class="s_xiaol"><span>销量：999</span><s>|</s><span>满意度：100% </span>   <s>|</s><span> 推荐：520</span></p>
-                <p>付款方式： <img src="../images/pay_zfb.png" alt="">
-                <img src="../images/pay_wx.png" alt="">
-                </p>
-                <p> “8月去有山体滑坡吗，自己开车路好走吗......    ”
-                <br>    ----王女士
-                </p>
+                <!--渲染添加-->
             </div>
         </div>
 
@@ -158,7 +145,7 @@
                 <s>￥100</s>
                 <span>￥<strong>100</strong></span>
                 <span class="zhifu">在线支付</span>
-                <button>预订</button>
+                <a class="button" href="./scenic_reserve.html">预订</a>
             </div>
         </div>
 
@@ -344,6 +331,69 @@
 <script src="../js/jquery.min.js"></script>
 <script src="../js/checkCode.js"></script>
 <script src="../js/pic_tab.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script>
+
+    $(function () {
+        //获取url中的参数
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg); //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+      //接收URL中的参数booksId
+        var id = getUrlParam('aid');
+        console.log('id:'+id);
+
+        $.ajax({
+            type:"get",    //请求方式
+            url:"/api/phone/api/spot/show?aid="+id,
+            dataType:"json",
+            success: function(data) {
+                //请求成功处理，和本地回调完全一样
+                console.log(data)
+                var data=data;
+              var info=data.info;
+//              轮播图添加   --------------
+              var piclist=data.info.piclist;
+              var imgList='';
+                for(var i=0;i<piclist.length;i++){
+                    imgList+='<li><a href="javascript:;">' +
+                        '<img src="http://www.tqingdao.com/'+piclist[i][0].litpic+'" width="500"  height="286" alt="">' +
+                        '</a></li>'
+                }
+//                $('.swiper_render').append(imgList);
+//轮播图右侧添加   --------------------
+              var rightHtml='  <h5>'+info.title+'</h5>' +
+                  ' <p> <span class="icon-adress"></span> '+info.address+'</p>' +
+                  '<div class="s_price">' +
+                  '￥<strong>'+info.sellprice+'</strong> <span>起</span>' +
+                  '</div>' +
+                  '<p>开放时间：08:00-18:00 </p>' +
+                  '<p class="s_fuwu">服务承诺：<span>如实描述</span> <span>低价保障</span> <span>入园保障</span> <span>特殊退订保障</span></p>' +
+                  '<p class="s_xiaol"><span>销量：'+info.sellnum+'</span><s>|</s><span>满意度：'+info.satisfyscore+'%</span>   <s>|</s><span> 推荐：'+info.recommendnum+'</span></p>' +
+                  '<p>付款方式： <img src="../images/pay_zfb.png" alt="">' +
+                  ' <img src="../images/pay_wx.png" alt=""></p>'
+
+              $('.s_sr').append(rightHtml);
+
+//门票部分添加    -------------------
+                
+
+
+            },
+            complete: function() {
+                //请求完成的处理
+            },
+            error: function(error) {
+                console.log(error)
+            }
+        });
+    })
+
+
+</script>
+
 
 <script>
     jQuery(document).ready(function() {

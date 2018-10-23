@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?kdmj20');
-  src:  url('fonts/icomoon.eot?kdmj20#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?kdmj20') format('truetype'),
-    url('fonts/icomoon.woff?kdmj20') format('woff'),
-    url('fonts/icomoon.svg?kdmj20#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?qs0adr');
+  src:  url('fonts/icomoon.eot?qs0adr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qs0adr') format('truetype'),
+    url('fonts/icomoon.woff?qs0adr') format('woff'),
+    url('fonts/icomoon.svg?qs0adr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -50,7 +50,6 @@
 }
 .icon-dui:before {
   content: "\e906";
-  color: #fff;
 }
 .icon-fox:before {
   content: "\e907";
@@ -59,6 +58,9 @@
 .icon-heart:before {
   content: "\e908";
   color: #fb8221;
+}
+.icon-i:before {
+  content: "\e909";
 }
 .icon-map:before {
   content: "\e90a";
@@ -72,39 +74,49 @@
   content: "\e90c";
   color: #1182e3;
 }
-.icon-sanjiao:before {
+.icon-right:before {
   content: "\e90d";
   color: #1182e3;
 }
-.icon-tel:before {
+.icon-sanjiao:before {
   content: "\e90e";
   color: #1182e3;
 }
-.icon-ticket_b:before {
+.icon-tel:before {
   content: "\e90f";
+  color: #1182e3;
+}
+.icon-ticket_b:before {
+  content: "\e910";
   color: #fb8221;
 }
 .icon-ting:before {
-  content: "\e910";
+  content: "\e911";
   color: #fff;
 }
 .icon-wan:before {
-  content: "\e911";
-  color: #1182e3;
-}
-.icon-weib:before {
   content: "\e912";
   color: #1182e3;
 }
-.icon-wifi:before {
+.icon-weib:before {
   content: "\e913";
   color: #1182e3;
 }
-.icon-wx:before {
+.icon-wifi:before {
   content: "\e914";
   color: #1182e3;
 }
-.icon-xiasanjiao:before {
+.icon-wx:before {
   content: "\e915";
+  color: #1182e3;
+}
+.icon-xiasanjiao:before {
+  content: "\e916";
   color: #535353;
+}
+.icon-you:before {
+  content: "\e917";
+}
+.icon-zuo:before {
+  content: "\e918";
 }

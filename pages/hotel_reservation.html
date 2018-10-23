@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="../css/pagination.css">
+
 </head>
 
 <body>
@@ -337,6 +338,26 @@
     <script src="../js/jquery.pagination.js"></script>
     <script src="../js/jQuery-jcDate.js"></script>
     <script>
+
+            $.ajax({
+                type:"get",    //请求方式
+                url:"/api/phone/api/hotel/index/0",
+                dataType:"json",
+                success: function(data) {
+                    //请求成功处理，和本地回调完全一样
+                    console.log(data)
+                    console.log('ddddddddddddddddddd')
+                },
+                complete: function() {
+                    //请求完成的处理
+                },
+                error: function(error) {
+                    console.log(error)
+                }
+            });
+
+    </script>
+    <script>
         $(function(){
             $('.homenum').each(function(){
                 var oul=$(this).find('.homesel ul');
@@ -360,6 +381,8 @@
 				format: "-",
 				Timeout: 100
 			});
+            
+            
         })
         $(function () {
             var aLis = $('.navselect li');
@@ -377,7 +400,9 @@
                 nextContent: '下页'
             });
         })
+
     </script>
+
 </body>
 
 </html>

@@ -179,11 +179,11 @@ p>img{
     border: 1px solid #1182e3;
     font-size: 12px;
 }
-.icon-dui{
-    background-color: #1182e3;
+.icon-dui {
     padding: 2.5px;
-    margin-right: -5px;
-    margin-left: 5px;
+    margin-right: -2px;
+    margin-left: -4px;
+    font-size: 18px !important;
 }
 .s_piaor s{
     font-size: 14px;
@@ -204,7 +204,8 @@ p>img{
     color: #1182e3;
     margin-right: 42px;
 }
-.s_piaor button{
+.s_piaor .button{
+    display: inline-block;
     background-color: #fb8221;
     color: #fff;
     width: 66px;
@@ -213,7 +214,8 @@ p>img{
     font-size: 14px;
     border:0;
     border-radius: 3px;
-    margin-right: 20px;
+    margin-right: 28px;
+    text-align: center;
 }
 
 /*内容详情*/
@@ -445,6 +447,216 @@ textarea::placeholder{
 }
 
 
+/* --------------   预定页面开始   --------------*/
+.reserve{
+    padding: 38px;
+    border: 1px solid #e8e8e8;
+    width: 905px;
+    margin: 30px 0 50px 0;
+}
+.reserve #orderfrm{
+    padding-bottom: 50px;
+}
+.con-order-box{
+    width: 833px;
+}
+.con-order-box .product-msg {
+    float: left;
+    width: 833px;
+    margin-bottom: 40px;
+}
+.con-order-box .product-msg .pm-tit {
+    float: left;
+    color: #333;
+    width: 833px;
+    height: 34px;
+    line-height: 34px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.con-order-box .product-msg .pm-tit strong {
+    float: left;
+    padding-left: 25px;
+    font-weight: normal;
+}
+.con-order-box .product-msg .pm-list dt, .receipt-msg .rp-con .pm-list dt {
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.con-order-box .product-msg .pm-list dd, .receipt-msg .rp-con .pm-list dd {
+    float: left;
+    width: 733px;
+    min-height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.con-order-box .product-msg .table-msg {
+    float: left;
+    width: 833px;
+    margin-top: 10px;
+}
+.con-order-box .product-msg .table-msg table {
+    border: 1px solid #d8d8d8;
+    border-top: 0;
+}
+.con-order-box .product-msg .table-msg th {
+    text-align: center;
+    border-top: 1px solid #d8d8d8;
+    background: #f2f2f2;
+}
+.con-order-box .product-msg .table-msg td {
+    text-align: center;
+    border-top: 1px solid #d8d8d8;
+}
+.con-order-box .product-msg .table-msg .control-box {
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+}
+.con-order-box .product-msg .table-msg .control-box .add-btn, .con-order-box .product-msg .table-msg .control-box .sub-btn {
+    float: left;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: -1px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #d8d8d8;
+}
+.con-order-box .product-msg .table-msg .control-box .number-text {
+    float: left;
+    width: 30px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: -1px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #d8d8d8;
+}
+.con-order-box .product-msg .table-msg .control-box .add-btn, .con-order-box .product-msg .table-msg .control-box .sub-btn {
+    float: left;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: -1px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #d8d8d8;
+}
+.con-order-box .product-msg .table-msg .price {
+    color: #c00;
+    font-size: 14px;
+    font-weight: bold;
+}
+.st-star-ico {
+    color: #ff3f3f;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 2px;
+}
+.pm-list>span{
+    padding-left: 10px;
+    height: 42px;
+    line-height: 42px;
+    color: #545454;
+}
+.con-order-box .product-msg .pm-list{
+    padding: 10px 0;
+    width: 100%;
+    height: 36px;
+}
+.con-order-box .product-msg .pm-list .linkman-text {
+    float: left;
+    width: 230px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    margin: 10px 0;
+}
+.con-order-box .product-msg .pm-list .order-remarks {
+    float: left;
+    width: 500px;
+    height: 100px;
+    line-height: 20px;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    outline: none;
+    border: 1px solid #d8d8d8;
+    margin: 10px 0;
+}
+
+.con-order-box .order-js-box {
+    width: 833px;
+}
+.con-order-box .order-js-box .total, .con-order-box .order-js-box .yz {
+    color: #333;
+    width: 833px;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: right;
+}
+.con-order-box .order-js-box .total span {
+    color: #c00;
+    font-size: 24px;
+    font-weight: bold;
+}
+.currency_sy {
+    font-style: normal;
+}
+.con-order-box .order-js-box .yz .tj-btn {
+    float: right;
+    color: #fff;
+    width: 136px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    background: #c00;
+    border-radius: 3px;
+}
+.con-order-box .order-js-box .yz .ma-text {
+    float: right;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    border: 1px solid #d8d8d8;
+}
+.con-order-box .order-js-box .yz .pic {
+    float: right;
+    width: 80px;
+    height: 32px;
+    margin-right: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.con-order-box .order-js-box .yz .bt {
+    float: right;
+    height: 32px;
+    line-height: 32px;
+}
+
+
+/* --------------   预定页面结束   --------------*/
+
 /*----------------- 酒店详情 ------------------*/
 .h_banner{
     background: url('../images/h_banner.jpg');
@@ -521,7 +733,7 @@ textarea::placeholder{
 }
 .h_date .h_hp .td_img span.icon-xiasanjiao{
     font-size: 12px;
-    padding-left: 6px;
+    padding-left: 3px;
 }
 .h_date .h_hp tr td p{
     color: #1182e3;
@@ -677,8 +889,8 @@ textarea::placeholder{
     font-weight: 700;
     color: #fff;
     position: absolute;
-    left: -12px;
-    top: 43px;
+    left: -7px;
+    top: 42px;
 }
 
 .t_day ul li{
