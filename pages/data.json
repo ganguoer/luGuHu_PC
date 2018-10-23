@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "data":{
+      "name":18
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
